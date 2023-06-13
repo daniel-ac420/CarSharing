@@ -1,0 +1,1056 @@
+body, html {
+	height: 100%;
+}
+
+html {
+	scroll-behavior: smooth; /* плавная прокрутка */
+}
+
+body {
+	color: #1b1818; /* default color */
+	font-family: "Roboto Condensed", sans-serif; /* all text */
+	font-size: 16px;
+	font-weight: 400; 
+	line-height: 19px;
+}
+
+a {
+	text-decoration: unset;
+}
+
+.wrapper {
+	max-width: 1220px; /* +20px because of padding */
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+
+/* ↓↓↓ HEADER ↓↓↓ */
+
+.header {
+	background-color: #332208;
+}
+
+.header__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.mobile__menu__bttn {
+	display: none; /* кнопка мобильного меню */
+}
+
+.logo:hover {
+	filter: brightness(0.75);
+	transition: 0.75s;
+}
+
+.menu__list {
+	display: flex;
+	flex-wrap: nowrap;
+	text-transform: uppercase;
+}
+
+.menu__item {
+	margin-right: 30px;
+}
+
+.menu__item:last-child {
+	margin-right: 0;
+}
+
+.phone, 
+.menu__list-link {
+	display: inline-block; /* для масштабирования при наведении */
+	color: #fefefe;
+	transition: all 0.5s;
+}
+
+.phone:hover, 
+.menu__list-link:hover {
+	color: #c5ac2d;
+	transform: scale(1.15);
+}
+
+.menu__list-link {
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 5px; /* для отступа подчёркивания при наведении */
+	border-bottom: 1px solid transparent; /* граница для последующего эффекта перехода */
+	transition: all 0.75s;
+}
+
+.menu__list-link:hover {
+	border-bottom: 1px solid #c5ac2d;
+}
+
+/*
+.top__slider__images {
+	width: 600px;
+	height: 450px;
+}
+*/
+
+/* ↑↑↑ HEADER ↑↑↑ */
+
+
+/* ↓↓↓ BANNER ↓↓↓ */
+
+.top__heading {
+	display: flex;
+	align-items: center;
+	padding: 50px 0 30px;
+	text-align: center;
+}
+
+.top__content {
+	padding-top: 90px;
+}
+
+.top__content, 
+.top__slider {
+	width: 50%;
+}
+
+.top__tiile {
+	max-width: 455px;
+	font-family: "Fira Sans", sans-serif; /* headers */
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 58px;
+	margin: 0 auto 20px;
+}
+
+.top__text {
+	max-width: 470px;
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 auto 65px;
+}
+
+.application__bttn {
+	display: inline-block; /* для масштабирования при наведении */
+	padding: 15px 18px;
+	background-color: #c5ac2d;
+	color: #fefefe;
+	border: 1px solid transparent;
+	text-transform: uppercase;
+	transition: all 0.75s;
+}
+
+.application__bttn:hover {
+	text-decoration: underline;
+	background-color: #fefefe;
+	color: #c5ac2d;
+	border: 1px solid #c5ac2d;
+	transform: scale(1.1);
+}
+
+.top__slider__text span {
+	margin: 0 7px;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 500;
+}
+
+
+.top__bottom {
+	display: flex;
+	align-items: flex-end;
+	text-align: center;
+}
+
+.top__bottom__items {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.top__bottom__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #332208;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: all 0.75s;
+}
+
+.top__bottom__item:hover {
+	cursor: pointer;
+	transform: scale(1.25);
+}
+
+.top__bottom__item__text {
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.top__bottom__links {
+	width: 50%;
+}
+
+.top__bottom__link {
+	color: #1b1818;
+	border-bottom: 1px solid transparent;
+	transition: all 0.5s;
+}
+
+.top__bottom__link:first-child {
+	margin-right: 20px;
+}
+
+.top__bottom__link:hover {
+	padding-bottom: 5px;
+	color: #c5ac2d;
+	border-bottom: 1px solid #c5ac2d;
+}
+
+/* BANNER SLIDER SLICK */
+
+.slick-dots {
+	text-align: center;
+}
+
+.slick-dots button {
+	font-size: 0;
+	width: 8px;
+	height: 8px;
+	background-color: #332208;
+	border-radius: 50%;
+	border: none;
+	padding: 0;
+}
+
+.slick-dots .slick-active button {
+	width: 16px;
+	height: 16px;
+}
+
+.top__slider .slick-dots {
+	position: absolute;
+	right: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*
+[role="presentation"]:hover .slick-dots button {
+	width: 12px;
+    height: 12px;
+}
+*/
+
+.main__banner {
+	margin-bottom: 200px;
+}
+
+/* ↑↑↑ BANNER ↑↑↑ */
+
+
+/* ↓↓↓ RENT LEASE ↓↓↓ */
+
+.lease {
+	margin-bottom: 200px;
+}
+
+.lease__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.lease_content {
+	max-width: 300px;
+}
+
+.title {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.lease__title {
+	margin-bottom: 30px;
+}
+
+.lease_content p + p {
+	margin: 20px 0 55px; /* +15px из-за padding у кнопки */
+}
+
+.lease__item {
+	max-width: 250px;
+	min-height: 350px;
+	padding: 0 35px 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	border: 1px solid #332208;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.lease__item__number {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 500;
+	font-size: 96px;
+	line-height: 115px;
+	opacity: 0.05;
+}
+
+.lease__item__subtitle {
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: auto; /* !!! уменьшает отступ от цифры, увеличивает отступ до текста */
+}
+
+.lease__item .lease__text {
+	
+}
+
+/* ↑↑↑ RENT LEASE ↑↑↑ */
+
+
+/* ↓↓↓ ADVANTAGES ↓↓↓ */
+
+.advantages {
+	margin-bottom: 100px;
+}
+
+.advantages__title {
+	margin-bottom: 48px;
+}
+
+.advantages__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.advantages__items, 
+.advantages__description {
+	width: 270px;
+}
+
+.advantages__list-item {
+	position: relative;
+	margin-bottom: 27px;
+	padding-right: 26px; /* с учётом width псевдоэлемента */
+	text-align: right;
+	transition: all 0.5s;
+}
+
+.advantages__list-item:hover {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.advantages__list-item::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	content: "";
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #332208;
+}
+
+.advantages__list-item:nth-child(1), 
+.advantages__list-item:nth-child(7) {
+	margin-right: 0;
+}
+
+.advantages__list-item:nth-child(2), 
+.advantages__list-item:nth-child(6) {
+	margin-right: 48px;
+}
+
+.advantages__list-item:nth-child(3), 
+.advantages__list-item:nth-child(5) {
+	margin-right: 92px;
+}
+
+.advantages__list-item:nth-child(4) {
+	margin-right: 130px;
+}
+
+.advantages__description {
+	text-align: right;
+}
+
+.advantages__description-text {
+	margin-bottom: 30px;
+}
+
+.advantages__description-text:nth-child(2) {
+	max-width: 220px;
+	margin-left: auto; /* для выравнивания по правому краю после задания ширины */
+}
+
+.video-popup {
+	display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+	width: 200px;
+	height: 50px;
+	padding: 5px 19px;
+}
+
+.video-popup-image {
+	margin-left: 14px;
+}
+
+.video-popup-line {
+	margin-right: 14px;
+	text-align: center;
+}
+
+.video-popup:hover {
+	justify-content: center;
+}
+
+.video-popup:hover .video-popup-image {
+	display: none;
+}
+
+.video-popup:hover .video-popup-line {
+	margin-right: 0;
+	transition: all 0.5s;
+}
+
+/* ↑↑↑ ADVANTAGES ↑↑↑ */
+
+
+/* ↓↓↓ REVIEWS ↓↓↓ */
+
+.reviews {
+	padding: 100px 0;
+	margin-bottom: 100px;
+	background-color: #332208;
+	color: #fefefe;
+}
+
+.reviews__title {
+	margin-bottom: 70px;
+}
+
+.reviews__item {
+	display: flex !important;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 45px 30px;
+	margin: 0 15px;
+/*	width: 270px;*/
+	min-height: 300px;
+	text-align: center;
+	border: 1px solid #c5ac2d;
+}
+
+.reviews__item-text {
+	margin: auto 0;
+}
+
+/* REVIEWS SLIDER SLICK */
+
+.reviews .slick-dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+}
+
+.reviews .slick-dots button {
+	margin: 0 5px;
+	background-color: #c5ac2d;
+}
+
+/* ↑↑↑ REVIEWS ↑↑↑ */
+
+
+/* ↓↓↓ QUESTIONS FORM ↓↓↓ */
+
+.questions {
+	margin-bottom: 100px;
+}
+
+.questions__inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.questions-image {
+	width: 50%;
+	margin-right: 45px;
+}
+
+.questions__form {
+	margin-left: 45px;
+}
+
+.questions__form-title {
+	margin-bottom: 5px;
+}
+
+.questions__form-subtitle {
+	margin-bottom: 50px;
+}
+
+.questions__form .questions__form-input {
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+	color: #1b1818;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid rgba(27, 24, 24, 0.1);
+	transition: all 0.5s;
+}
+
+.questions__form .questions__form-input:hover, 
+.questions__form .questions__form-input:focus {
+	border-bottom: 1px solid rgba(27, 24, 24, 0.4);
+}
+
+.questions__form-input::placeholder {
+	line-height: 19px;
+	font-size: 16px;
+	color: rgba(27, 24, 24, 0.75);
+}
+
+.questions__form .application__bttn {
+	margin-top: 50px;
+	width: 200px;
+	height: 50px;
+}
+
+.questions__form .questions__form-input, 
+.questions__form .application__bttn {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/* ↑↑↑ QUESTIONS FORM ↑↑↑ */
+
+
+/* ↓↓↓ FOOTER ↓↓↓ */
+
+.footer {
+	background-color: #332208;
+	height: 200px;
+	padding-top: 75px;
+}
+
+.footer .header__inner {
+	height: unset;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__bottom-image {
+	margin: 20px 15px auto;
+}
+
+.footer__bottom-link:hover {
+	filter: brightness(1.25);
+	transform: scale(1.25);
+	transition: all 0.5s;
+}
+/* ↑↑↑ FOOTER ↑↑↑ */
+
+
+/* ↓↓↓ ADAPTING ↓↓↓ */
+
+@media (max-width: 1440px) {
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease__inner {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+			
+	.lease_content {
+		max-width: 85%;
+	}
+	
+	.lease__title + .lease__text, 
+	.lease__title + .lease__text + .lease__text {
+		max-width: 60%
+	}
+	
+	.lease__item {
+		max-width: 420px;
+		min-height: 250px;
+		margin-top: 40px;
+	}
+	/* ↑ RENT LEASE ↑ */
+}
+/* ↑↑↑ 1440px ↑↑↑ */
+
+@media (max-width: 1280px) {
+	/* ↓ ADVANTAGES ↓ */
+	
+	.advantages__inner {
+		justify-content: space-evenly;
+	}
+	
+	/* ↓ ADVANTAGES ↓ */
+}
+/* ↑↑↑ 1280px ↑↑↑ */
+
+@media (max-width: 1024px) {
+	/* ↓ BANNER ↓ */
+	
+	.top__heading {
+		padding: 0 0 30px;
+	}
+	
+	.top__bottom__item:hover {
+		transform: unset;
+	}
+	
+	.main__banner {
+		margin-bottom: 120px;
+	}
+	/* ↑ BANNER ↑ */
+	
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease_content {
+		max-width: 92%;
+	}
+	
+	.lease {
+		margin-bottom: 120px;
+	}
+
+	/* ↑ RENT LEASE ↑ */
+		
+	/* ↑ ADVANTAGES ↑ */
+		
+	.advantages__inner {
+		flex-wrap: wrap;
+	}
+	
+	.advantages__title {
+		text-align: center;
+	}
+	
+	.advantages__image {
+		order: 1;
+	}
+	
+	/* ↑ ADVANTAGES ↑ */
+	
+	/* ↓ REVIEWS ↓ */
+	
+	.reviews {
+    	padding: 75px 0;
+	}
+	
+	.reviews__title {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	
+	/* ↑ REVIEWS ↑ */
+	
+	/* ↓ QUESTIONS ↓ */
+	
+	.questions-image {
+		margin-right: 25px;
+	}
+	
+	.questions__form {
+		margin-left: 25px;
+	}
+	
+	/* ↑ QUESTIONS ↑ */
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+@media (max-width: 768px) {
+	/* ↓ HEADER ↓ */
+	
+	.menu {
+		order: 1; /* смещение кнопки мобильного меню вправо */
+	}
+	
+	.mobile__menu__bttn {
+		position: relative;
+		display: block;
+		width: 30px;
+		height: 20px;
+		border: 2px solid #c5ac2d;
+		border-left: none;
+		border-right: none;
+		background-color: transparent;
+		cursor: pointer;
+	}
+	
+	.mobile__menu__bttn::before {
+		position: absolute;
+		content: "";
+		width: 30px;
+		height: 2px;
+		background-color: #c5ac2d;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	
+	.header .menu__list {
+		display: block;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		right: 0; /* расширение на весь экран */
+		z-index: ;
+		text-align: center;
+		background-color: #332208;
+		transform: translateY(-500px);
+		transition: all 0.75s;
+	}
+	
+	.header .menu__list.menu__list--active {
+		transform: translateY(0);
+	}
+	
+	.header .menu__item {
+		margin-right: 0;
+	}
+	
+	.header .menu__list .menu__list-link {
+		display: block;
+		padding: 20px 0;
+		border-bottom: none;
+	}
+	
+	.header .menu__list .menu__item:last-child .menu__list-link {
+		padding-bottom: 40px;
+	}
+	
+	/* HEADER ↑ */
+	
+	/* ↓ BANNER ↓ */
+	
+	.top__heading {
+		display: block;
+	}
+	
+	.top__content {
+		padding-top: 30px;
+	}
+
+	.top__content, .top__slider {
+		width: 100%;
+	}
+	
+	.top__bottom {
+		display: block;
+	}
+	
+	.top__bottom__items, 
+	.top__bottom__links {
+		width: 100%;
+	}
+	
+	.top__bottom__items {
+		justify-content: space-evenly;
+		margin-bottom: 50px;
+	}
+	
+	/* ↑ BANNER ↑ */
+	
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease__inner {
+		justify-content: center;
+	}
+	
+	.lease_content {
+		max-width: 100%;
+		text-align: center;
+	}
+	
+	.lease__title + .lease__text, .lease__title + .lease__text + .lease__text {
+		max-width: 70%;
+		margin: 20px auto;
+	}
+	
+	/* ↑ RENT LEASE ↑ */
+	
+	/* ↓ QUESTIONS ↓ */
+	
+	.questions-image {
+		margin-right: 15px;
+	}
+	
+	.questions__form {
+		margin-left: 15px;
+	}
+	
+	/* ↑ QUESTIONS ↑ */	
+	
+	/* ↓ FOOTER ↓ */
+	
+	.footer {
+		height: auto;
+		padding-top: 50px;
+	}
+	
+	.footer .menu {
+		order: unset;
+	}
+	
+	.footer__inner {
+		flex-direction: column;
+	}
+	
+	.footer .phone, 
+	.footer__inner .menu,
+	.footer__inner .application__bttn {
+		margin-bottom: 30px;
+	}
+	
+	.footer__bottom-image {
+		margin: 0 15px 30px;
+	}
+	
+	/* ↑ FOOTER ↑ */	
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+@media (max-width: 540px) {
+	/* ↓ BANNER ↓ */
+	
+	.top__bottom__items {
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+	
+	.top__bottom__item {
+		margin: 10px 30px;
+	}
+	
+	/* ↑ BANNER ↑ */
+}
+/* ↑↑↑ 540px ↑↑↑ */
+
+@media (max-width: 425px) {
+	/* ↓ BANNER ↓ */
+	
+	.top__bottom__item {
+		width: 70%;
+		height: 140px;
+	}
+	
+	.main__banner {
+		margin-bottom: 100px;
+	}
+	
+	/* ↑ BANNER ↑ */
+	
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease__item {
+    	max-width: 70%;
+	}
+	
+	.lease__item__subtitle {
+		margin-bottom: 10px;
+	}
+	
+	/* ↑ RENT LEASE ↑ */
+	
+	/* ↓ ADVANTAGES ↓ */
+	
+	.advantages__image {
+		order: unset;
+	}
+	
+	.advantages__items {
+		width: 100%;
+	}
+
+	.advantages__list-item:nth-child(n) {
+		text-align: center;
+		margin-right: unset;
+		padding-right: unset;		
+	}
+	
+	.advantages__list-item:nth-child(1)::after, 
+	.advantages__list-item:nth-child(7)::after{
+		left: 80px;
+	}
+	
+	.advantages__list-item:nth-child(2)::after, 
+	.advantages__list-item:nth-child(6)::after{
+		left: 95px;
+	}
+	
+	.advantages__list-item:nth-child(3)::after, 
+	.advantages__list-item:nth-child(5)::after{
+		left: 110px;
+	}
+	
+	.advantages__list-item:nth-child(4)::after {
+		left: 125px;
+	}
+	
+	.advantages__description {
+		width: 100%;	
+	}
+	
+	.advantages__description {
+		text-align: center;
+	}
+	
+	.advantages__description-text:nth-child(2) {
+		max-width: unset;
+		margin-left: unset;
+	}
+	
+	/* ↑ ADVANTAGES ↑ */
+	
+	/* ↓ QUESTIONS ↓ */
+	
+	.questions__inner {
+		flex-direction: column;
+	}
+	
+	.questions-image {
+		margin-right: unset;
+		width: 100%;
+	}
+	
+	.questions__form {
+		margin-left: unset;
+		text-align: center;
+	}
+	
+	.questions__form-subtitle {
+		margin-bottom: 25px;
+	}
+	
+	/* ↑ QUESTIONS ↑ */
+	
+	/* ↓ FOOTER ↓ */
+	
+	.footer .menu {
+		display: none;
+	}
+	
+	/* ↑ FOOTER ↑ */
+}
+/* ↑↑↑ 425px ↑↑↑ */
+
+@media (max-width: 375px) {
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease__item {
+    	max-width: 80%;
+	}
+	
+	/* ↑ RENT LEASE ↑ */
+	
+	/* ↓ ADVANTAGES ↓ */
+		
+	.advantages__list-item:nth-child(1)::after, 
+	.advantages__list-item:nth-child(7)::after{
+		left: 50px;
+	}
+	
+	.advantages__list-item:nth-child(2)::after, 
+	.advantages__list-item:nth-child(6)::after{
+		left: 70px;
+	}
+	
+	.advantages__list-item:nth-child(3)::after, 
+	.advantages__list-item:nth-child(5)::after{
+		left: 90px;
+	}
+	
+	.advantages__list-item:nth-child(4)::after {
+		left: 105px;
+	}
+	
+	/* ↑ ADVANTAGES ↑ */
+}
+/* ↑↑↑ 375px ↑↑↑ */
+
+@media (max-width: 320px) {
+	/* ↓ BANNER ↓ */
+	.top__heading {
+		padding: 0 0 20px;
+	}
+	
+	.top__slider__text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.top__slider__text span {
+		margin: 5px 0; 
+	}
+	
+	.top__bottom__link {
+		display: block;
+	}
+	
+	.top__bottom__link, 
+	.top__bottom__link:hover {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	
+	.top__bottom__link:first-child {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	
+	/* ↑ BANNER ↑ */
+	
+	/* ↓ RENT LEASE ↓ */
+	
+	.lease__item {
+    	max-width: 90%;
+	}
+	
+	/* ↑ RENT LEASE ↑ */
+
+	/* ↓ ADVANTAGES ↓ */
+		
+	.advantages__list-item:nth-child(1)::after, 
+	.advantages__list-item:nth-child(7)::after{
+		left: 30px;
+	}
+	
+	.advantages__list-item:nth-child(2)::after, 
+	.advantages__list-item:nth-child(6)::after{
+		left: 40px;
+	}
+	
+	.advantages__list-item:nth-child(3)::after, 
+	.advantages__list-item:nth-child(5)::after{
+		left: 50px;
+	}
+	
+	.advantages__list-item:nth-child(4)::after {
+		left: 60px;
+	}
+	
+	/* ↑ ADVANTAGES ↑ */
+}
+/* ↑↑↑ 320px ↑↑↑ */
