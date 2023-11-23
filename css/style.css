@@ -848,7 +848,7 @@ a {
 }
 /* ↑↑↑ 540px ↑↑↑ */
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
 	/* ↓ BANNER ↓ */
 	
 	.top__bottom__item {
@@ -954,7 +954,7 @@ a {
 	
 	/* ↑ FOOTER ↑ */
 }
-/* ↑↑↑ 425px ↑↑↑ */
+/* ↑↑↑ 430px ↑↑↑ */
 
 @media (max-width: 375px) {
 	/* ↓ RENT LEASE ↓ */
