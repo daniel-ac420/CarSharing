@@ -848,6 +848,23 @@ a {
 }
 /* ↑↑↑ 540px ↑↑↑ */
 
+
+
+@media (max-width: 480px) {
+	
+	.menu__list {
+		gap: 10px;	
+	}
+	
+	.menu__item {
+		margin-right: 0;
+	}
+	
+}
+/* ↑↑↑ 480px ↑↑↑ */
+
+
+
 @media (max-width: 430px) {
 	/* ↓ BANNER ↓ */
 	
